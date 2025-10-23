@@ -69,27 +69,6 @@
     <small>Member page for 7 | Lock In Squad</small>
   </footer>
 
-  <!-- 🎬 Reverse-looping background video -->
-  <script>
-    const video = document.getElementById('bg-video');
-    let reversing = false;
-    let reverseInterval;
-
-    video.addEventListener('ended', () => {
-      reversing = true;
-      const fps = 30;
-      reverseInterval = setInterval(() => {
-        if (video.currentTime <= 0) {
-          clearInterval(reverseInterval);
-          reversing = false;
-          video.play(); // start normal playback again
-        } else {
-          video.currentTime -= 1 / fps;
-        }
-      }, 1000 / fps);
-    });
-  </script>
-
   <script src="../script.js"></script>
 </body>
 </html>
