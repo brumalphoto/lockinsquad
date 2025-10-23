@@ -6,7 +6,9 @@ This repository contains a lightweight static site for **Lock in Squad**.
 - `index.html` — main page (edit text and structure as needed)
 - `styles.css` — simple styles
 - `script.js` — minimal JS
+- `credits.html/` — credits page
 - `assets/` — folder for images & audio (placeholder files included)
+- `members/` — folder for individual member pages (placeholder files included)
 
 ## Quick start (local)
 ```bash
