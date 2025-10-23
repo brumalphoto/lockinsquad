@@ -1,0 +1,48 @@
+Home Page:
+Introductory page (splash screen) background video via 
+Home page background video by Evgenij Mikhailov via Pexels
+
+
+
+Credits page:
+Credits page background video by THUY PHAM XUAN via Pixabay
+
+
+
+Members Pages:
+BinGod's background video by Ruvim Miksanskiy via Pexels
+
+7's background video by Osmo via Pixabay
+
+Aito's background video by u_u72gt7s8k2 via Pixabay
+
+Avxry's background video by Stef Bzt via Pixabay
+
+Dango's background video by Osckar Espinosa via Pixabay
+
+CXNTROL's background video by Nicky ❤️🌿🐞🌿❤️ via Pixabay
+
+HafuBoy's background video by u_kiqpmrzbn1 via Pixabay
+
+homisides's background video by cottonbro studio via Pexels
+
+NIGHT's background video by Olena from Pixabay
+
+yCrxzy's background video by Piyapong Saydaung via Pixabay
+
+
+
+Miscellaneous:
+Headphones (Toggle music button) GIF by Iris,Helen,silvy via Pixabay
+
+
+
+
+unquarintine cmd:
+xattr -d com.apple.quarantine "/Users/z/Downloads/a.mp4"
+
+bash:
+ffmpeg -i "/Users/z/Downloads/a.mp4" \
+  -c:v libvpx-vp9 -crf 35 -b:v 0 -pix_fmt yuv420p \
+  -vf "scale=1920:-1:flags=lanczos,fps=30,loop=0" \
+  -an "/Users/z/Downloads/bingodbg.webm"
