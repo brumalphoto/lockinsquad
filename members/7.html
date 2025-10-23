@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>No Saints Remain (7)</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/logo.jpg" type="image/jpeg">
+  <meta name="description" content="No Saints Remain (7) | Lock In Squad Member Profile">
+</head>
+
+<body class="member-page">
+  <!-- 🎬 Background Video -->
+    <video id="bg-video" autoplay muted playsinline>
+    <source src="../assets/7bg.webm" type="video/webm">
+  </video>
+
+  <!-- 🔊 Audio Player -->
+  <div id="audio-player">
+    <button id="speaker-toggle" aria-label="Toggle sound">
+      <img src="../assets/headphones.gif" alt="Toggle Sound" class="headphones-icon">
+    </button>
+    <span id="track-title">No Saints Remain — MeVSyou (lithiumdealer)</span>
+    <audio id="bg-audio" loop preload="metadata">
+      <source src="../assets/MeVSyou.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- 🧠 Member Hero -->
+  <header class="member-hero">
+    <div class="member-info">
+      <h1>No Saints Remain (7)</h1>
+      <div class="role-badge producer">Artist & Producer</div>
+      <p class="tagline">Better days coming soon.”</p>
+      <div class="member-links">
+        <a href="../index.html">← Back to Lock In Squad</a>
+      </div>
+    </div>
+    <img src="../assets/7.webp" alt="7" class="member-image">
+  </header>
+
+  <!-- 📜 Member Bio -->
+  <main class="member-main">
+    <section class="member-bio card">
+      <h2>About 7</h2>
+      <p>7 is our resolute perfectionist who embraces originality, outperforms the majority and makes time for anyone.</p>
+    </section>
+
+    <section class="member-projects card">
+      <h2>Notable Works</h2>
+      <ul>
+        <li><a href="https://on.soundcloud.com/7VbPOL76SUWgE1L682" target="_blank">MeVSYOU</a> – A melodic classic that 7 produced, rapped on, and engineered in under 24 hours</li>
+        <li><strong>Back</strong> – Collaboration with Homisides</li>
+      </ul>
+    </section>
+
+    <section class="member-links card">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://soundcloud.com/nosaintsremain" target="_blank">SoundCloud</a></li>
+        <li><a href="https://instagram.com/nosaintsremain" target="_blank">Instagram</a></li>
+            <a href="../index.html?from=member#members">Return to Members</a>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>Member page for 7 | Lock In Squad</small>
+  </footer>
+
+  <!-- 🎬 Reverse-looping background video -->
+  <script>
+    const video = document.getElementById('bg-video');
+    let reversing = false;
+    let reverseInterval;
+
+    video.addEventListener('ended', () => {
+      reversing = true;
+      const fps = 30;
+      reverseInterval = setInterval(() => {
+        if (video.currentTime <= 0) {
+          clearInterval(reverseInterval);
+          reversing = false;
+          video.play(); // start normal playback again
+        } else {
+          video.currentTime -= 1 / fps;
+        }
+      }, 1000 / fps);
+    });
+  </script>
+
+  <script src="../script.js"></script>
+</body>
+</html>
