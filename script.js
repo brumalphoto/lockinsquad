@@ -58,14 +58,13 @@ if (!document.getElementById("splash")) {
   }
 }
 
-// ✅ Autoplay logic for member pages
-if (document.body.classList.contains('member-page')) {
+if (document.body.classList.contains('member-page') || 
+    document.body.classList.contains('member-page-two')) {
   // Try to autoplay
   bgAudio.muted = false;
   bgAudio.play().then(() => {
     audioPlayer.classList.add('playing');
   }).catch(() => {
-    // Show tap prompt if autoplay fails
     const tapPrompt = document.createElement('div');
     tapPrompt.textContent = '🔊 Tap to start audio';
     Object.assign(tapPrompt.style, {
