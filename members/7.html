@@ -12,9 +12,12 @@
 
 <body class="member-page">
   <!-- 🎬 Background Video -->
-    <video id="bg-video" autoplay muted playsinline>
-    <source src="https://files.catbox.moe/fcohkv.webm" type="video/webm">
-  </video>
+<video id="bg-video" autoplay muted loop playsinline>
+  <source src="/assets/7bg-720p.webm" 
+          type="video/webm" media="(min-width: 768px)">
+  <source src="/assets/7bg-540p.webm" 
+          type="video/webm">
+</video>
 
   <!-- 🔊 Audio Player -->
   <div id="audio-player">
