@@ -684,9 +684,9 @@ body.bingod-page .member-info {
   animation: shimmerMove 3s linear infinite;
 }
 
-/* Founder label under BinGod's name */
+/* CEO label under BinGod's name */
 body.bingod-page .member-info h1::after {
-  content: "Founder";
+  content: "CEO";
   display: block;
   font-size: 1rem;
   font-weight: 600;
