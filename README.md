@@ -1,3 +1,5 @@
+https://lockinsquad.pages.dev/
+
 # Lock in Squad — Static Site (starter)
 
 This repository contains a lightweight static site for **Lock in Squad**.
